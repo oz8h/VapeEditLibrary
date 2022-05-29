@@ -16,6 +16,7 @@ end
 
 -- ok now we start
 local LocalPlayer = game:GetService('Players').LocalPlayer
+local RunService = game:GetService('RunService')
 
 local Service = setmetatable({}, {
 	__index = function(_, Service)
@@ -29,7 +30,6 @@ local Service = setmetatable({}, {
 
 local UserInputService = Service.UserInputService
 local TweenService = Service.TweenService
-local RunService = Service.RunService
 
 local lib = { RainbowColorValue = 0, HueSelectionPosition = 0 }
 local Mouse = LocalPlayer:GetMouse()
